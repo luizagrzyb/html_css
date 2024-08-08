@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/*  cor mais escura:    #236240
+    cor mais clara:     #84E1AD*/
+
+
+    /* aprendendo a inserir uma fonte baixada no proprio pc */
+    @font-face {
+        font-family: 'IDroid';
+        src: url('fontes/idroid.otf') format('truetype'); 
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    body {
+        margin: 300px;
+    }
+
+    h2, h1 {
+        font-family: IDroid;
+        text-indent: 1.5em;
+    }
+
+    header > h1 {
+        color: whitesmoke;
+    }
+
+    h1 {
+        color: #236240;
+        font-size: 1.6em;
+    }
+
+    h2 {
+        background-image: linear-gradient(to right, #236240a2, #84e1ac00);
+        color:#236240;
+    }
+
+    header > h1 {
+        margin-top: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0px;
+    }
+
+    header > p {
+        text-align: center;
+    }
+
+    header {
+        padding: 30px;
+        color: whitesmoke;
+        text-align: center;
+        background-image: linear-gradient(to bottom, #84E1AD, #236240);
+    }
+
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+        list-style: none;
+    }
+
+    a:hover {
+        font-weight: 900;
+    }
+
+    #itens {
+            text-decoration: none;
+            list-style-type: none;
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+    }
+
+    p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: justify;
+        /* NÃO LEMBRAVA */
+        text-indent: 2em;
+        margin: 20px;
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    header {
+        margin: 0px;
+    }
+
+    iframe {
+        max-width: 30px 200px;
+    }
+
+    main {
+        margin: 30px 200px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        padding-bottom: 1%;
+        padding-top: 1%;
+    }
+
+    main img {
+        max-width: 95%;
+        height: auto;
+
+    }
+    
+    footer {
+        background-color: #236240;
+        color: whitesmoke;
+        padding: 1px;
+    }
+
+
+    .extra {
+        box-shadow: 4px 4px 9px 9px rgba(0,0,0,0.05);
+        border-radius: 10px 10px;
+        padding: 10px;
+        margin: 10px;
+        background-color: #23624057;
+    }
+    
+
+

@@ -1,0 +1,59 @@
+PLANEJAMENTO 
+
+1. Inicialmente planejamos como o site ficará, seu layout, através do https://mockflow.com/, por exemplo;
+    1.1. A partir disso, cria-se dentro do body a estrutura do seu site;
+    
+2. Definir, junto ao layout, as cores do site! Como coolor e adobecolor;
+    definir sempre do mais claro para mais escuro
+        ex. com variáveis: 
+            :root {
+                --cor0: #c5ebd6;
+                --cor1: #83e1ad;
+                --cor2: #3ddc84;
+                --cor3: #2fa866;
+                --cor4: #1a5c37;
+                --cor5: #063d1e;
+            }
+
+3. Definir fontes (neste caso será bebas neue para títulos (google fonts), idroid (dafont))
+
+OBS.: CSS TAMBÉM É UMA LINGUAGEM DE MARCAÇÃO!!!!
+
+TUDO O QUE COLOCAR NA ROOT SERÁ PARA O DOCUMENTO INTEIRO!
+    todas as variáveis devem começar com --
+
+
+CHAT-GPT SOBRE >:
+A diferença entre usar > no seletor CSS dentro do header e não usá-lo no main tem a ver com a especificidade e a relação hierárquica entre os elementos.
+
+Uso do > (Seletor Filho Direto)
+O seletor > é conhecido como seletor de filho direto e é usado para aplicar estilos apenas aos elementos que são filhos diretos do elemento pai especificado.
+No exemplo acima, o estilo será aplicado apenas aos elementos <h1> que são filhos diretos do elemento <header>. Se houver um <h1> aninhado mais profundamente dentro de outros elementos no <header>, esses estilos não serão aplicados.
+
+Seletor de Descendentes
+O seletor de descendentes (sem >) aplica estilos a todos os elementos especificados que estão dentro do elemento pai, independentemente do quão profundamente aninhados eles estejam.
+Neste exemplo, o estilo será aplicado a todos os <h1> e <h2> que estão dentro do <main>, independentemente do nível de aninhamento. Isso significa que os estilos serão aplicados a qualquer <h1> e <h2> que sejam descendentes do <main>.
+
+Por Que Usar Um ou Outro?
+Especificidade e Controle: Se você quer garantir que os estilos sejam aplicados apenas a filhos diretos, use >. Isso é útil quando você deseja controlar precisamente quais elementos são afetados, evitando aplicar estilos a elementos aninhados mais profundamente.
+
+Flexibilidade: Se você quer que os estilos sejam aplicados a todos os descendentes especificados dentro de um elemento pai, use o seletor de descendentes. Isso é útil quando você deseja que os estilos se propaguem a todos os níveis de aninhamento.
+
+E sim, você pode usar > no main, mas é importante entender como ele funciona para evitar erros. O seletor > especifica que o estilo deve ser aplicado apenas aos filhos diretos do elemento pai. Se o código não está funcionando como esperado, pode haver alguns motivos para isso:
+
+Motivos Comuns para Erros
+Estrutura HTML Incompatível: Verifique se a estrutura do seu HTML corresponde à especificação do seletor. Se não houver filhos diretos <h1> ou <h2> dentro de <main>, o seletor não encontrará nada para aplicar os estilos.
+
+4. O conteúdo do site deve ter até 1200px de largura, senão fica muito estendido.
+
+-------------------------------------
+
+PARTE DO HTML:
+<!--tinha me esquecido disso!!!!!!!!!!-->
+        <picture>
+            <!--guanabara altera de min pra max-width-->
+            <source media="(max-width: 800px)" srcset="imagens/irina-blok-pq.jpg" />
+            <img src="imagens/irina-blok.jpg" alt="" />
+        </picture>
+
+-------------------------------------

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* o > significa herança em CSS, ou seja, neste exemplo abaixo, a div tem como "herdeiro" o parágrafo. O parágrafo faz parte/está dentro da div, então ele irá alterar apenas o parágrafo de dentro da div */
+
+        div > p#especial {
+            display: none;
+        }
+
+        div > p#especial:hover {
+            display: block;
+            font-size: larger;
+            color: rgb(12, 86, 129) !important;
+        }
+
+        div:hover > p#especial {
+            display: block;
+            color: rgb(85, 220, 238);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>
+        Passe o mouse sobre o texto abaixo
+    </p>
+    <div>
+        Passe o mouse aqui
+        <p id="especial">
+            eu estou amando html e css
+        </p>
+    </div>
+        <h2>Explicando</h2>
+        <p>
+            O > significa herança em CSS, ou seja, neste exemplo abaixo, a div tem como "herdeiro" o parágrafo. O parágrafo faz parte/está dentro da div, então ele irá alterar apenas o parágrafo de dentro da div
+        </p>
+        
+        <p><a href="links.html">link para continuação do capítulo</a></p>
+    
+</body>
+</html>

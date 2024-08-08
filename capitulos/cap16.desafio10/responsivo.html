@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste de responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            /*width: 830px;*/
+            /* nos telefones mais antigos, a tela tem 320px, por isso a largura mínima será de 320px */
+            min-width: 280px;
+            /* abri o inspecionar e observei que até 830 o conteúdo fica harmonico */
+            max-width: 830px;
+            /* só de colocar margin/margem auto ele já centraliza o conteúdo */
+            margin: auto;
+
+        }
+
+        img {
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nesciunt doloremque aut soluta? Maxime voluptatibus quo eum omnis animi, nihil sequi accusantium beatae placeat alias ea, id eius nemo porro!
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima ratione iste debitis ullam architecto suscipit, mollitia voluptatibus vero aliquam, a enim! Omnis quas facilis architecto inventore excepturi repellat fugiat consequuntur!
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum eligendi doloremque adipisci vitae, molestiae atque magni, aut blanditiis rem dolorum facere ipsam corrupti ab ipsa reprehenderit illum similique necessitatibus cumque!
+        </p>
+        <!--tinha me esquecido disso!!!!!!!!!!-->
+        <picture>
+            <!--guanabara altera de min pra max-width-->
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg" />
+            <img src="imagens/irina-blok.jpg" alt="" />
+        </picture>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptatem mollitia assumenda perspiciatis eius exercitationem nihil? Blanditiis minus molestias repudiandae sunt perferendis, dolores enim ipsa officia nesciunt et, odio repellendus.
+        </p>
+    </main>
+</body>
+</html>

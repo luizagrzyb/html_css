@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 15 - Seletores Personalizados </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="principal">Capítulo 15 - Seletores Personalizados</h1>
+    <h1>EX.: Aprendendo HTML</h1>
+    <h2 id="especial">EX.: HTML básico</h2>
+    <p>
+        Quando você tem diversos tipos de texto iguais (como vários h1, h2, p, etc) e gostaria de alterar uma(s) dessa(s), você pode dar a elas uma identificação — um 'id'. 
+    </p>
+    <p>
+        ANOTAÇÕES IMPORTANTES DE AULAS PASSADAS: <br>
+        Agora, se você quiser que mostre o que estiver entre os símbolos de maior e menor, você deve colocar '&lt ;' e '&gt ;', sem espaço (abra no vs code, para ver como deve ser colocado de fato). Por exemplo:
+    </p>
+    <p id="paragrafo01">
+        &ltp id="paragrafo01"&gt
+    </p>
+
+    <p>
+        Com isso, vá ao CSS e escreva, por exemplo: 'p#paragrafo01{}', pois desta forma você está dizendo que, dentro dos diversos parágrafos 'p', há um que se chama/é identificado como 'paragrafo01' e é apenas ele que você deseja realizar alterações. 
+    </p>
+
+    <p>
+        Você também pode colocar apenas '#parágrafo01{}'. Isso ajuda caso você queira chamar outras partes do texto com a mesma identificação, independente se é parágrafo, título, etc, pois gerará uma alteração em todos. Porém, se quiser alterar especificamente o parágrafo dito como parágrafo01, e em outro lugar você colocou uma id com o mesmo nome, deve-se colocar sim o tipo antes do #.  
+    </p>
+
+    <p>
+        Por exemplo: criarei uma id de 'especial' para todos os h2 de HTML. 
+    </p>
+
+    <br>
+
+    <hr>
+    <p id="importante">
+        HTML: id;       CSS: #; <br>
+        HTML: class;    CSS: .;
+    </p>
+    <hr>
+
+    <p>
+        Enquanto eu fazia esta aula, pensei que para padronizar algumas das tags (como parágrafos específicos, títulos diferentes mas que queria que tivesse a mesma caracteristica) pudesse utilizar o &ltp#id:"nomeDaIdentificacao"&gt, porém está errado!!! devemos utilizar neste caso as <strong>CLASSES</strong>
+    </p>
+
+    <hr>
+    <p>
+        <a href="idVSclass.html" id="linkclasse">Página para saber mais sobre Class e a diferença entre class e id </a>
+    </p>
+    <hr>
+
+    <h2 id="especial">EX.: HTML intermediário</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta odit nobis non, dolor eius harum. Blanditiis, placeat alias praesentium aliquam, voluptas reprehenderit modi deleniti qui repellat impedit voluptatum ipsum rerum?
+    </p>
+    <h2 id="especial">EX.: HTML avançado</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores rem cupiditate tempore voluptates molestias unde quibusdam labore doloribus eligendi ut repellat aspernatur, sed blanditiis consequuntur quasi, amet reiciendis animi!
+    </p>
+
+    <h1>EX.: Aprendendo CSS</h1>
+    <h2>EX.: CSS básico</h2>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit odio, facilis unde doloremque nemo mollitia pariatur accusamus nihil aperiam quasi ad modi facere, esse tempore officiis harum quisquam provident blanditiis.
+    </p>
+    <h2>EX.: CSS intermediário</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repellat inventore nobis ab totam pariatur porro temporibus. Dicta accusantium, et quaerat iure voluptatum necessitatibus, dolore praesentium repellendus deserunt consequuntur minima?
+    </p>
+    <h2>EX.: CSS avançado</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quam quidem commodi repudiandae quis cumque? Earum sunt, voluptatibus adipisci eveniet consequatur quasi debitis commodi sint vero quidem pariatur aliquam! Quibusdam!
+    </p>
+</body>
+</html>

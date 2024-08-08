@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 12.2 - CSS Interno</title>
+    <style>
+        body {
+            background-color: #ff4d4f;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 18px;
+
+        }
+        h2 {
+            color: darkred;
+        }
+
+        h1{
+            background-color: lightblue;
+        }
+        p {
+            text-align: justify;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Capítulo 12.2 - CSS Interno (locais)</h1>
+    <p>
+        Neste tipo de inserção de CSS, você colocará todos os estilos dentro da tag head, inserindo uma nova tag entitulada style.
+    </p>
+    <p>
+        Diferente da outra forma (inline), aqui você consegue padronizar para toda a família, em vez de ter que ir h1 por h1, por exemplo, você pode alterar uma única vez dentro de style que irá se aplicar a todos os h1. 
+    </p>
+    <p>
+        Caso queira, porém, que um dos quatro h3 seja diferente, por exemplo, é só padronizar da forma interna e depois ir especificamente no que você deseja alterar e fazer da forma inline mesmo. Tem também uma outra forma, que é através do id e do class, mas veremos mais para frente. 
+    </p>
+    <p>
+        Existem duas desvantagens: a primeira é que deixará seu documento index muito externo, já que styles ocupa muito mais linhas que o próprio esqueleto em si. A outra desvantagem é que, caso tenha inúmeras páginas com o mesmo padrão, o estilo deve ser copiado e colado em todas as páginas. Portanto, ela é útil para apenas um único documento. 
+    </p>
+    <h2>Exemplo capítulo 1</h2>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis nesciunt omnis, modi ea soluta error hic. Adipisci cum voluptatibus, fugiat ab recusandae quibusdam quis delectus cupiditate? Autem ea hic minima?
+    </p>
+    <h3>Exemplo capítulo 1.1</h3>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque alias unde nisi ex! Dignissimos minus beatae, nihil optio numquam fugit modi, perspiciatis eius, mollitia dolore corrupti pariatur. Exercitationem, magni iusto?
+    </p>
+    <h3 style="color:blueviolet">Exemplo capítulo 1.2</h3>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ipsam quod ducimus, tempora quam dolores assumenda ipsum in velit amet dignissimos quisquam, sed nesciunt consequatur doloribus quo accusantium non vitae.
+    </p>
+    <h2>Exemplo capítulo 2</h2>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique maxime sit veritatis facere perferendis nemo ducimus commodi eveniet magnam? Ipsa eius temporibus voluptatibus nulla voluptates reiciendis error architecto ea culpa?
+    </p>
+    <h3>Exemplo capítulo 2.1</h3>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nemo nulla amet! Dolorum voluptate ipsa quam asperiores facere, voluptatem inventore et sit exercitationem. Itaque dolore rerum impedit, atque porro saepe.
+    </p>
+    <h3>Exemplo capítulo 2.2</h3>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed consectetur ipsam voluptatibus ut sapiente et rem eius repellat, repellendus repudiandae, ipsum quibusdam eos nulla! Deserunt unde nisi placeat odit ducimus.
+    </p>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 15 - diferenças entre id e class</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Capítulo 15 - diferenças entre id e class</h1>
+
+    <p>
+        Enquanto eu fazia esta aula, pensei que para padronizar algumas das tags (como parágrafos específicos, títulos diferentes mas que queria que tivesse a mesma caracteristica) pudesse utilizar o &ltp#id:"nomeDaIdentificacao"&gt, porém está errado!!! devemos utilizar neste caso as <strong>CLASSES</strong>
+    </p>
+
+    <p>
+        Então, id é para um único elemento; class para vários. 
+    </p>
+    <hr>
+    <p>
+        DICA DO DIA MENINAS: Não dê nome de id/class pela forma, mas sim por funcionalidade <br>
+        <p style="text-align: center; font-weight: 900;">
+            ('verde' x 'basico')
+        </p>
+
+        <p>
+            Outra dica, beninex: para alterar (apagar) mais de uma tag com o mesmo nome, pressione a tecla 'alt' e clique nas tags q quer apagar.
+        </p>
+        <hr>
+    </p> 
+    <p style="text-align: center">
+        <strong>Quando você tem dois elementos e deseja aplicar o mesmo estilo para ambos, <br>
+            NÃO SE UTILIZA id IGUAIS! Utiliza, na verdade as <span class="importante">CLASS</span>!!!!!</strong>
+
+    <p>
+        SPAN no html é muito importante! Pois dentro de tag &ltspan&gt você cita a classe criada em CSS que deseja inserir as configurações desta. Por exemplo:
+    </p>
+
+    <p style="text-align: center; font-style: italic;">
+        &ltspan class="importante"&gt
+    </p>
+
+    <p>
+        ANOTAÇÕES IMPORTANTES DE AULAS PASSADAS: <br>
+        Agora, se você quiser que mostre o que estiver entre os símbolos de maior e menor, você deve colocar '&lt ;' e '&gt ;', sem espaço (abra no vs code, para ver como deve ser colocado de fato). Por exemplo:
+    </p>
+
+    <hr>
+    <p class="importante">
+        HTML: id;       CSS: #; <br>
+        HTML: class;    CSS: .;
+    </p>
+    <hr>
+
+    <p>Uma outra informação <span class="importante">importantíssima</span> </p> é que cada tag pode fazer parte de mais de uma classe e/ou id (<span style="font-weight: 700;">mas o id se sobrepõe!!!!!</span>). Tem como colocar style dentro de span também, bem bacana, fiz nesta frase anterior. Mas voltando ao que foi dito no começo, trago como exemplo: 
+
+    <p style="text-align: center;">&ltspan class="importante avancado"&gt</p>
+
+    <p>Utilizando uma frase aleatória, fica: </p>
+
+    <p>chico é um cachorro muito corajoso, não tem medo de nada e enfrenta quase tudo, <span class="importante">exceto</span>: <span class=" chico importante">portas batendo e mosquitos.</span> </p>
+
+    <hr>
+
+
+    <h1>EX.: Aprendendo HTML</h1>
+    <h2 class="basico">EX.: HTML básico</h2>
+    
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, aperiam facilis pariatur porro dolores qui cum vero, tempore, aspernatur quos harum? Dicta mollitia nisi ea aliquam eveniet possimus iure ratione.
+    </p>
+
+    <h2 class="intermediario">EX.: HTML intermediário</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta odit nobis non, dolor eius harum. Blanditiis, placeat alias praesentium aliquam, voluptas reprehenderit modi deleniti qui repellat impedit voluptatum ipsum rerum?
+    </p>
+    <h2 class="avancado">EX.: HTML avançado</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores rem cupiditate tempore voluptates molestias unde quibusdam labore doloribus eligendi ut repellat aspernatur, sed blanditiis consequuntur quasi, amet reiciendis animi!
+    </p>
+
+    <h1>EX.: Aprendendo CSS</h1>
+    <h2 class="basico">EX.: CSS básico</h2>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit odio, facilis unde doloremque nemo mollitia pariatur accusamus nihil aperiam quasi ad modi facere, esse tempore officiis harum quisquam provident blanditiis.
+    </p>
+    <h2 class="intermediario">EX.: CSS intermediário</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repellat inventore nobis ab totam pariatur porro temporibus. Dicta accusantium, et quaerat iure voluptatum necessitatibus, dolore praesentium repellendus deserunt consequuntur minima?
+    </p>
+    <h2 class="avancado">EX.: CSS avançado</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quam quidem commodi repudiandae quis cumque? Earum sunt, voluptatibus adipisci eveniet consequatur quasi debitis commodi sint vero quidem pariatur aliquam! Quibusdam!
+    </p>
+</body>
+</html>

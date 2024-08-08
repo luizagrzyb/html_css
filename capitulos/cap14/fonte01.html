@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            /* quando tem dois nomes, deve colocar entre aspas simples 
+            Sobre as sans-ferif, nós temos como principais a verdana, a courier new, a arial e a helvetica */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: justify;
+            font-size: 16px;
+        }
+
+        h1, h2 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+        /* utilizando shorthand */
+
+        h3 {
+            font: italic bolder 1.2em 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>
+        Não serão em todos os dispositivos que a fonte será reconhecida. Portanto, geralmente colocam o 'safe-combination', para garantir que uma das fontes irá pegar no seu dispositivo. <br>
+        Então coloca-se por exemplo: "font-family: Arial, Helvetica, sans-serife;"<br>
+        O dispositivo tentará carregar a primeira fonte. Se não conseguir, tentará a segunda, e depois a terceira. Para ver quais são as safe-combinations escreva "css web safe combinations" no google e abra o w3school.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quis suscipit, ex officiis voluptatum vitae magnam doloribus aut in cupiditate atque quaerat placeat rem optio ratione reiciendis incidunt reprehenderit sint!
+    </p>
+    <h2>Tamanhos de fonte</h2>
+    <p>
+        O font-size pode ser com medidas absolutas e relativas. 
+    </p>
+
+    <h3>Medidas absolutas</h3>
+    <p>
+        São: cm (centímetro), mm (milímetros), in (polegada), px (pixels), pt (ponto, muito utilizado em editor de texto), pc (paica)
+    </p>
+    <p>
+        Trabalhar com medidas absolutas se torna difícil no momento que estamos criando um site para diversos tipos de dispositivos cujos tamanhos são extremamente variáveis. 
+    </p>
+
+    <h3>Medidas relativas</h3>
+    <p>São: em (medida relativa ao tamanho atual da fonte), ex (medida relativa ao tamanho x da fonte), rem (tipo em, mas relativo ao root, que está configurada no body),  vw (largura da viewport), vh (altura da vw), e % (porcentagem) </p>
+    <p>
+        Recomendação da W3C: utilizar o px e em.
+    </p>
+    <p>
+        O padrão utilizado é 16px. 
+    </p>
+    <p>
+        16px geralmente é 1em;, pois se baseia no tamanho padrão/normal/natural da fonte.
+    </p>
+
+    <h2>Trabalhando com fontes - Peso, estilo e shortland font</h2>
+    <p>
+        Muita gente se confunde com weight (peso), width (largura) e height (altura). 
+    </p>
+    <p>
+        Para font-weight temos: lighter, normal, bold e bolder. <br>
+        Também, para algumas fontes, é possível utilizar um tamanho que vai de 100 à 900 (contando de 100 em 100).
+    </p>
+    <p>
+        Para font-style tem em italico ou normal.
+    </p>
+
+    <p>
+        Portanto, para negrito utilizar o font-weight, e para itálico utilizar o font-style. Para o sublinhado, coloque text-decoration: underline.
+    </p>
+
+    <h3>Shorthand font</h3>
+    <p>
+        "font: font-style > font-weight > font-size > font-family"
+    </p>
+
+
+
+    <a href="fonte02.html">Acesse a próxima página</a>
+</body>
+</html>

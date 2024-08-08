@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        a {
+            color: rgb(68, 66, 66);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: rgb(63, 63, 63);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellowgreen;
+        }
+
+        .especial::after {
+            content: '[<]';
+            text-decoration: none;
+            font-weight: lighter;
+            color: darkgray;
+        }
+
+        .especial::before {
+            content: ' [>]';
+            text-decoration: none;
+            font-weight: lighter;
+            color: darkgray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/lugrzyb/" target="_blank">Instagram</a></li>
+        <li><a href="https://github.com/luizagrzyb" target="_blank" class="especial">GitHub</a></li>
+        <li><a href="https://x.com/putzgrzyb" target="_blank">Twitter</a></li>
+    </ul>
+
+    <h2>Explicando as pseudo-classes</h2>
+    <p>O 'visited' vai gerar alterações caso você queira que o link que já foi acessado anteriormente tenha uma aparencia diferente aos demais. </p>
+    <p>
+        O 'active' gera alterações quando o link está selecionado.
+    </p>
+
+    <p>Portanto, pseudo-classes são palavras que definem estados de elementos de dentro do HTML</p>
+
+    <h2>Explicando pseudo-elementos</h2>
+
+    <p>
+        Os elementos funcionam para os ids e para as classes (pelo que entendi são os before e after). 
+    </p>
+
+    <hr>
+
+    <h2 style="text-align: center;">Resumão dos seletores personalizados</h2>
+    <p style="font-family: monospace; font-size: 1.2em; text-align: center;"> # = id <br>
+          . = class <br>
+          : = pseudo-class <br>
+          > = children (tipo herança, acho) </p>
+<hr>
+
+</body>
+</html>

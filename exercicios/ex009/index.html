@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas OL e UL</title>
+</head>
+<body>
+    <h1>Três listas possíveis em HTML</h1>
+    <h2>Ordenadas</h2>
+    <p>A tag 'ol' gera listas ordenadas (order list). Dentro dela haverá a tag 'li', que significa 'list iten'. A tag 'li' não precisa ser fechada, é opcional em HTML5. <br>
+    É possível colocar um parâmetro chamado 'type', com opções 1, i, I, a ou A. Se quiser iniciar a lista a partir de um número, escreva o parâmtro 'start'.</p>
+    <ol type="i", start="3">
+        <li>acordar;</li>
+        <li>tomar café;</li>
+        <li>ligar para joão;
+        <li>escovar os dentes;
+        <li>ir para faculdade;</li>
+        <li>jantar;</li>
+        <li>dormir.</li>
+    </ol>
+
+    <h2>Não ordenadas</h2>
+    <p>São aquelas que não precisa enumerar. Para isso utilize a tag 'ul' (unorder list). Também é possível personalizar o tipo, com 'type' sendo os argumentos possíveis 'circle', 'disc', 'square'.</p>
+    <ul type="circle">
+        <li>café;</li>
+        <li>feijão;</li>
+        <li>sucrilhos;</li>
+        <li>manjericão.</li>
+    </ul><br><br>
+
+
+    <h2>Juntando listas</h2>
+    <ol>
+        <li>Minhas linguagens favoritas</li>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="4">
+            <li>php</li>
+            <li>python</li>
+            <li>javascript</li>
+            <li>kotlin</li>
+        </ol>
+    </ol>
+
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>nes</li>
+        <ul>
+            <li>mario bras</li>
+            <li>ninja guiden</li>
+        </ul>
+        <li>snes</li>
+        <ul>
+            <li>mario</li>
+            <li>donkey kong</li>
+        </ul>
+        <li>playstation</li>
+        <ul>
+            <li>final fantasy</li>
+            <li>castlevanja</li>
+        </ul>
+    </ol>
+
+    <p>Obs.: para alterar várias tags para uma mesma (tipo de ol>ul), segure alt e clique com o cursor as tags que deseja alterar.</p>
+
+    <h2>Listas de definição</h2>
+    <p>Quando deseja colocar o termo e o signifcado deste em seguida. Dentro da tag d1 coloque as tags 'dt' e 'dd'. Na 'dt' escreva o termo e na 'dd' a definição.</p>
+    <d1>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>javascript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site. </dd>
+    </d1>
+</body>
+</html>

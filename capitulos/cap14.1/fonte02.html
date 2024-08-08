@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 14 - Fontes Externas</title>
+    <style>
+
+           /*tipos de formato: 
+           - opentype (otf)
+           - truetype (ttf)
+           - embedded-opentype
+           - truetype-aat (apple advenced typography)
+           - svg */
+
+        @font-face {
+            font-family: 'arianeCoachella';
+            src: url('fontes/ArianeCoachella-Regular.ttf') format('truetype');
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        * {
+            font-family: 'arianeCoachella';
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Capítulo 14 - Fontes Externas</h1>
+    <h2>Capítulo exemplo</h2>
+    <p>Outro site que tem diversas fontes gratuitas é o 'dafont'.</p>
+    <p>Abra o site, escolha a fonte que desejar e baixe. </p>
+    <p>O formato baixado estará zipado. Extraia em um arquivo em uma pasta de mesmo nome e a arraste todos os arquivos para a pasta do site. </p>
+    <p>Na pasta do site, crie uma pasta escrita "fontes" e insira todas as fontes externas baixadas, para que fique fora do html e não deixe tão poluído. </p>
+    <p>Dentro de style coloque as seguintes informações, alterando conforme a fonte escolhida: </p>
+
+    <img src="imagens/cap10.png" alt="" width="600">
+
+    <p>Determine o nome da fonte da forma como desejar para "chamá-la" futuramente dentro de cada seletor. Na url coloque exatamente o nome que está salvo e insira 'fontes/' no começo.</p>
+
+    <p><a href="fonte03.html">Página para descobrir qual fonte que está sendo utilizada</a></p>
+
+</body>
+</html>

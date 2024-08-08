@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 11 - Mídias </title>
+
+</head>
+<body>
+    <h1>Capítulo 11 - Mídias</h1>
+    <h2>Aula 01 - Imagens dinâmicas (responsivas) </h2>
+    <p>Abra o GIMP; clique em arquivo > nova; altere o tamanho conforme você for utilizar em dispositivos diferentes. </p>
+    <p>Em opções avançadas coloque resolução de 80px; para celular coloque tamanho da imagem de 300px, para tablet 700px e para TVs/PCs 1000px.</p>
+    <p>Pintamos as imagens, uma de cada cor para melhor diferenciar e salvamos. </p>
+
+    <h2>Aula 02 - Elemento Picture (continuação da aula 01) </h2>
+    <p>A tag picture é semelhante com a img, mas ela te permite criar diversas sources, isto é, fontes. Com ela é possível definir o max-width, sem utilizar CSS, apenas HTML.  </p>
+
+    <picture>
+        <!-- sempre começar do menor tamanho para o menor!!!!! -->
+        <source media="(max-width: 750px)" srcset="imagens/fotoP.png" type="image/png">
+        <!-- source tem diversos tipos, selecione source:media:type; 
+         altere min-width para max-width -->
+        <source media="(max-width: 1050px)" srcset="imagens/fotoM.png" type="image/png">
+        <!-- colocar sempre 50px a mais, para considerar a barra de rolagem -->
+        <img src="imagens/fotoG.png" alt="Imagem flexível">
+        <!-- sempre colocar por último a base da imagem, isto é, a imagem de maior tamanho; e por cima os que forem alteradas as resoluções/tamanhos -->
+
+        <!-- coloque sempre o mais leve pro mais pesado -->
+
+    </picture>
+
+
+    <h2>Aula 03 - Áudios </h2>
+    <p>Dica para utilizar músicas de fundo do youtube: <br><br>
+    Abra o YoutubeStudio; vá em bilbioteca de áudio; se escolher uma sem atribuição necessária não é preciso referenciar, mas se escolher com atribuição, deve-se colocar os direitos autorais (as linhas que vêm abaixo do áudio, para referenciar). No meu caso, escolhi uma que não tem atribuição necessária. </p>
+
+    <h3>Reproduzindo Áudio</h3>
+    <p>A maneira mais simples é colocar a tag audio; adicionar o autoplay para tocar automaticamente, e controls para aparecer a caixinha de som. </p>
+    <audio src="midia/nightDrive.mp3" controls autoplay></audio>
+
+    <p>Outra forma é apagar os argumentos de dentro da tag audio, e colocar a tag source para adicionar os áudios. </p>
+    
+    <!-- o padrão para o preload é auto, mas ele irá esperar o site carregar todo o arquivo mp3 pra depois mostrar o site pro usuário. é indicado que se coloque metadata (carregará apenas algumas informações, como duração, etc) ou none (só carregará se usuário clicar em play) -->
+    <audio preload="" autoplay controls loop>
+        <!-- o loop faz com que o audio, quando finalizar, comece de novo -->
+        <source src="midia/guanaCast.mp3" type="audio/mpeg">
+        <!-- no pdf tem vários tipos de áudio e como inserie no argumento "type" -->
+         <source src="midia/guanaCast.ogg" type="audio/ogg">
+         <!-- é indicado que não se utilize wav pq é muito pesado, mas é um dos tipos que funcionam em determinados dispositivos, mas o indicado é mais mp3 e ogg mesmo, se quiser deixar o wav de fora pode -->
+         <source src="midia/guanaCast.wav" type="audio/wav">
+         <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanaCast.mp3"> Clique aqui para baixar o arquivo MP3</a></p>
+         <!-- no caso, não temos o áudio de formato .ogg nem de .wav. coloquei só como exemplo, pois esses três são os formatos essenciais pros audios conseguirem rodar na maioria dos dispositivos.
+          a ordem é importante: primeiro tenta mp3, ogg, e depois wav. caso nenhum consiga rodar no navegador do usuário, a mensagem "infelizmente..." será mostrada -->
+
+    </audio>
+
+    <h2>Aula 04 - Vídeo </h2>
+    <p>Os formatos que apresentam melhor compatibilidade são: mp4/m4v, ogv, webm; </p>
+    <p>Handbrake: é um software que é utilizado para converter seus vídeos, caso precise inserir um vídeo interno no seu site. Ele não converte pra ogg, mas os principais mesmo são mp4 e webm. Guanabara usou o video-online-convert.com para converter para ogv.</p>
+    <p>Este vídeo está hospedado no meu próprio servidor. </p>
+
+    <!-- já pode definir pro geral o tamanho da largura e a presença do controle do vídeo; e para colocar um thumb insira o argumento "poster" -->
+
+   <video controls width="560" poster="imagens/MAR.png">
+        <source src="video/Videomarr.mp4" type="video/mp4">
+        <source src="video/Videomarr.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos. </p>
+   </video>
+
+
+   <h2>Aula 05 - Vídeos de Hospedagem Externa </h2>
+
+   <p>A ideia da aula 04 pode gerar um custo muito alto pro cliente, já que teria que colocar diversos tipos de formatos de vídeo, e as vezes com o grande acesso ele teria que pagar um valor considerável para manter o site para todos os usuários (?); portanto, agora vamos ver uma forma mais útil de fazer tudo isso pegar. </p>
+
+   <p>Portanto, o que faremos é adicionar <strong>vídeos de hospedagem de vídeos</strong>; no caso, será pelo Youtube. </p>
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=9K59O9wzsUytJ_ld" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+   <p>Quando dá play neste segundo vídeo, o usuário não está consumindo dados do cliente, mas sim do YouTube. </p>
+   <p>O youtube só não contempla quando você quer deixar o vídeo privado apenas para um nicho de pessoas; pra isso deve-se procurar outros servidores de hospedagem de vídeos. O que o GUanabara usa é o Vimeo. </p>
+   <p>É possível também inserir vídeos presentes no vimeo. Ele não entrega tanto quanto os vídeos do youtube, porém a qualidade dele é muito melhor, e nos dá muitas opções para incorporar. </p>
+
+</body>
+</html>

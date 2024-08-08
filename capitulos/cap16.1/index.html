@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 { /* elemento do tipo box-level */
+            background-color: lightgrey;
+            height: 45px;
+            width: 382px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgray;
+
+            /* padding geralmente é dividido em 4 partes, que são os quatro lados */
+
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+        
+
+            /* o ideal é que seja realizado no sentido do relógio */
+
+            /*pode ser feito dessa forma: 
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            porém, se você quiser centralizar a margem exatamente, para que se adapte aos diversos tamanhos de dispositivos, utilize 'margin:auto' */
+
+            margin: auto;
+
+            /* ATENÇÃO!!!!!!!!!!!!!!!!!!!!!!!!!!
+            todo elemento que você quiser centralizar utilize margin:auto!!!!!!!!!!!!!! */
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+
+        }
+
+        a { /* elemento do tipo inline-level */
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgba(127, 255, 212, 0.39);
+        }
+
+        /* 
+        SHORTHANDS!!!!!!!!!!!!
+
+        border: 10px solid darkgrey;
+
+        outline: 5px dashed salmon; 
+
+        padding: 10px 10px 10px 10px;
+            OU
+        padding: 10px (se todas as laterais tiverem tamanhos iguais);
+            OU
+        padding: 10px 20px (o primeiro define para o de cima e o de baixo; o segundo define o da direita e da esquerda)
+
+        */
+
+        /* USE SEMPRE AUTO EM VEZ DE PIXEL PARA CENTRALIZAR!!!!!!!!!!!!!!!!!!!!!!! */
+
+        /* como padrão nós temos certos elementos box-level e outros inline-level, mas se quiser alterar o display de um elemento, é só acrescentar nas suas propriedades o display que deseja ('diplay:flex', por exemplo) */
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>
+        Parágrafos também são exemplos de box-level, mas os <a href="#">links</a> são exemplos de caixas inline-level. Vamos ver como tudo isso funciona. 
+    </p>
+    <p>
+        Sempre que tiver 'display: block' significa que é um elemento do tipo box-level.
+    </p>
+
+    <p>
+        Tem muita coisa anotada como comentário! Abra pelo visualcode.
+    </p>
+
+    <a href="atencao.html">GROUPING TAGS!!!!!!!!!!!!!!!!!!!!</a>
+    
+</body>
+</html>

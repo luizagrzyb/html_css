@@ -1,0 +1,35 @@
+@charset "UTF-8";
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* para dar o ar de degrade nesta caralha, tem também o to bottom, to left */
+body {
+    background-image: linear-gradient(to right, #BFD7B5, #A3C4BC);
+}
+
+main {
+    background-color: #C08552;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    /* primeiro parametro: quanto a sombra vai andar para o lado; seg: quanto vai andar pra baixo; terc: quanto vai espalhar; quarto: transparencia */
+    /* para alterar a transparencia, passe o mouse em cima da cor, altere para rgb, acrescente o a, e coloque a transparencia que preferir em ultimo parametro */
+    box-shadow: 5px 5px 15px rgba(50, 46, 68, 0.5);
+
+}
+
+h1 {
+    color: #413C58;
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(46, 42, 61, 0.4);
+}
+
+h2 {
+    color: #FFA400;
+}
+
+p {
+    text-align: justify;
+}

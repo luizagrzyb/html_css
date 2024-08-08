@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+body {
+    background-color: #E8FFBF;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+h1 {
+    color: #3A412E
+}
+
+h2 {
+    color: #666B5E;
+}
+
+p#paragrafo01 {
+    text-align: center;
+    color: #7e9458;
+    font-weight: 900;
+}
+
+#especial {
+    font-style: italic;
+}
+
+.importante{
+    color: darkred;
+    font-weight: 900;
+    text-align: center;
+}
+
+#linkclasse {
+    color: #7e9458;
+    font-weight: 900;
+}
+
+/* no class não colocamos nome do elemento, diferente do que pode ser feito em id */
+.basico {
+    color: #B4CF66;
+    font-size: 1em;
+}
+
+.intermediario {
+    color: #44803F;
+    font-size: 1.5em;;
+}
+
+.avancado {
+    color: #146152;
+    font-size: 2em;
+}
+
+.chico {
+    text-decoration: underline;
+}

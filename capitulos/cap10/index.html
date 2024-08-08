@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 10 - Links</title>
+</head>
+<body>
+    <h1>Usando links</h1>
+    <h2>Aula 01 - Links Externos</h2>
+<p>Links externos são links que estão fora do nosso domínio. <br>
+    Você pode acessar o meu <a href="https://github.com/luizagrzyb">GitHub.</a> <br></p>
+<p>Para envelopar/envolver: Ctrl + Shift + P + Enter + TAG de interesse (só para relembrar) </p>
+<p>A tag 'a' significa âncora.</p>
+
+<p>Para que seja criada uma âncora com link que abrirá uma nova aba, coloque o argumento "target="_blank" rel="external", depois do link. </p>
+<p>Você pode acessar o meu <a href="https://github.com/luizagrzyb" target="_blank" rel="external">GitHub.</a> <br> </p>
+<br><br><br>
+
+<h2>Aula 02 - Links Internos</h2>
+<p>Acesse a <a href="pag0002.html" rel="next">segunda página</a> </p>
+
+<p>Para links internos, defina qual será a página anterior com rel="prev" e a página seguinte com rel="next"</p>
+<p>CHAT GPT: Os atributos rel="next" e rel="prev" no elemento 'a' são utilizados para definir a relação entre o documento atual e o documento vinculado, facilitando a navegação sequencial entre páginas, especialmente em contextos como documentos paginados, séries de artigos, ou passos de um tutorial.</p>
+
+<p>A <a href="noticias/pag003.html" rel="next">terceira página</a>, eu criei dentro de uma pasta entitulada "noticias"</p>
+
+<p>Para links internos da própria página, não é necessário colocar nada de comandos. Porém pode ser inserido em target="_self", mas não é obrigatório. </p>
+
+<p>./ = própria pasta</p>
+<p>../ = página anterior</p>
+
+
+<h2>Links para downloads</h2>
+<p>Utilize o comando "download" para determinar qual arquivo dentro da pasta será baixado. </p>
+<p>Utilize type="application/..." e altere as reticencias de acordo com o tipo de arquivo que será baixado. <br>
+    NEM TUDO É APPLICATION/..., pode mudar. Confira no link abaixo. </p>
+
+<p>Para saber qual nome utilizar, acesse <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external" >iana</a> </p>
+
+<ul>
+    <li><a href="livro/exemploDownload.pdf" download="exemploDownload" type="application/pdf">Baixar o livro em PDF</a></li>
+    <li><a href="livro/exemploDownload.rar" download="exemploDownload" type="application/x-rar-compressed">Link compactado em RAR</a></li>
+</ul>
+
+</body>
+</html>

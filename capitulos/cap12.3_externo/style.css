@@ -1,0 +1,18 @@
+/* Utilizar a regra @charset para definir a língua utilizada */
+
+@charset "UTF-8";
+
+body {
+    background-color: #f234;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+h1 {
+    color: #ff8f;
+    background-color: #0000;
+}
+
+h2 {
+    color: #e8a7a5;
+}

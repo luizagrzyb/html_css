@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Códigos e Citações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Códigos-fonte e Pré-formatação</h2>
+    <p>O comando <code>'code'</code> é ótima para ler códigos. </p>
+    <code>num = Int(Imput('Digite um número"))
+        if num % 2 == 0;
+            print(f'O número (num) é PAR');
+        else
+            print(f'O número (num) é ÍMPAR');
+    </code>
+    <p>
+        Porém perceba que está tudo em uma mesma linha. Para manter o formato do que foi escrito (com parágrafos, espaçamento), coloque dentro da tag 'pre':
+    </p>
+    <pre>
+    <code>num = int(imput('Digite um número"))
+        if num % 2 == 0;
+            print(f'O número (num) é PAR');
+        else
+            print(f'O número (num) é ÍMPAR');
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Para colocar o sentido de uma citação, coloque a tag 'q' de quote. 
+    <br>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q><br></p>
+
+    <h2>Citações completas</h2>
+    <p>Para colocar uma citação completa, utilize a tag 'blockquote':</p>
+    <blockquote cite="https://agencia.fiocruz.br/o-paradoxo-da-fotofobia-dos-vetores-da-doen%C3%A7a-de-chagas-e-suas-consequ%C3%AAncias"><em>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ut molestias quia, quis aliquid repudiandae aut. Modi doloremque amet vel velit, culpa porro maiores, fuga optio, sunt voluptas atque nam.</em></blockquote>
+    <p>Dentro dessa tag é possível colocar um argumento chamado 'cite' em que você poderá anexar o link de onde retirou o texto. Aqui, não será gerada uma citação visível, nem link de onde foi retirada a frase, mas é uma forma de possibilitar, por meio da busca, que o computador reconheça e faça uma associação entre o texto citado e o texto que está citando, pois compreende que há uma relação entre eles. </p>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <p>Neste caso, quando utiliza a tag 'bbr', ao passar o mouse em cima da abreviação, é possível ler o que a sigla significa. </p>
+    <h2>Texto invertido</h2>
+    <p>A tag 'bdo' escreve frases ao contrário. No argumento deve-se colocar 'rtl' (right to left): <br>
+        <bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+    
+
+</body>
+</html>
